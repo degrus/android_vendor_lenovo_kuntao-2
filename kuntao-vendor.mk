@@ -859,5 +859,5 @@ PRODUCT_PACKAGES += \
     cneapiclient \
     WfdService \
     WfdCommon \
-    QPerformance.jar \
-    UxPerformance.jar
+    QPerformance \
+    UxPerformance
