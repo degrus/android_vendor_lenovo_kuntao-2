@@ -396,7 +396,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/kuntao/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
     vendor/lenovo/kuntao/proprietary/vendor/bin/mm-pp-dpps:$(TARGET_COPY_OUT_VENDOR)/bin/mm-pp-dpps \
     vendor/lenovo/kuntao/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
-    vendor/lenovo/kuntao/proprietary/vendor/bin/perfd:$(TARGET_COPY_OUT_VENDOR)/bin/perfd \
     vendor/lenovo/kuntao/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
     vendor/lenovo/kuntao/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/lenovo/kuntao/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
@@ -503,10 +502,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/kuntao/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqseed3.so \
-    vendor/lenovo/kuntao/proprietary/vendor/lib/libqti-iop-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iop-client.so \
-    vendor/lenovo/kuntao/proprietary/vendor/lib/libqti-iop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iop.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
-    vendor/lenovo/kuntao/proprietary/vendor/lib/libqti_performance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti_performance.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
@@ -670,10 +666,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/kuntao/proprietary/vendor/lib64/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_encdec.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
-    vendor/lenovo/kuntao/proprietary/vendor/lib64/libqti-iop-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iop-client.so \
-    vendor/lenovo/kuntao/proprietary/vendor/lib64/libqti-iop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iop.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
-    vendor/lenovo/kuntao/proprietary/vendor/lib64/libqti_performance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti_performance.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib64/libquipc_os_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libquipc_os_api.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
@@ -787,6 +780,49 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/kuntao/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib64/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal_proprietary.so
 
+PRODUCT_COPY_FILES += \
+    vendor/lenovo/kuntao/proprietary/bin/perfservice:system/bin/perfservice \
+    vendor/lenovo/kuntao/proprietary/etc/init/perfservice.rc:system/etc/init/perfservice.rc \
+    vendor/lenovo/kuntao/proprietary/etc/perf/whitelistedapps.xml:system/etc/perf/whitelistedapps.xml \
+    vendor/lenovo/kuntao/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
+    vendor/lenovo/kuntao/proprietary/lib/libqti-iopd-client_system.so:system/lib/libqti-iopd-client_system.so \
+    vendor/lenovo/kuntao/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
+    vendor/lenovo/kuntao/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
+    vendor/lenovo/kuntao/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
+    vendor/lenovo/kuntao/proprietary/lib/vendor.qti.hardware.iop@1.0.so:system/lib/vendor.qti.hardware.iop@1.0.so \
+    vendor/lenovo/kuntao/proprietary/lib/vendor.qti.hardware.iop@2.0.so:system/lib/vendor.qti.hardware.iop@2.0.so \
+    vendor/lenovo/kuntao/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
+    vendor/lenovo/kuntao/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
+    vendor/lenovo/kuntao/proprietary/lib64/libqti-iopd-client_system.so:system/lib64/libqti-iopd-client_system.so \
+    vendor/lenovo/kuntao/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
+    vendor/lenovo/kuntao/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
+    vendor/lenovo/kuntao/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
+    vendor/lenovo/kuntao/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:system/lib64/vendor.qti.hardware.iop@1.0.so \
+    vendor/lenovo/kuntao/proprietary/lib64/vendor.qti.hardware.iop@2.0.so:system/lib64/vendor.qti.hardware.iop@2.0.so \
+    vendor/lenovo/kuntao/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/lib64/vendor.qti.hardware.perf@1.0.so \
+    vendor/lenovo/kuntao/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@1.0-service \
+    vendor/lenovo/kuntao/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
+    vendor/lenovo/kuntao/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
+    vendor/lenovo/kuntao/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
+    vendor/lenovo/kuntao/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
+    vendor/lenovo/kuntao/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
+    vendor/lenovo/kuntao/proprietary/vendor/lib/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd-client.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-util.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@1.0.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@2.0.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib/vendor.qti.hardware.perf@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@1.0.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.iop@2.0-impl.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib64/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib64/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd-client.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib64/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-util.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib64/vendor.qti.hardware.perf@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.perf@1.0.so \
+    vendor/lenovo/kuntao/proprietary/vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
+
 PRODUCT_PACKAGES += \
     libgpustats \
     libsdm-disp-vndapis \
@@ -822,4 +858,6 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     cneapiclient \
     WfdService \
-    WfdCommon
+    WfdCommon \
+    QPerformance.jar \
+    UxPerformance.jar
