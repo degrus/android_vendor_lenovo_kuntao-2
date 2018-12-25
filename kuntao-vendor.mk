@@ -30,8 +30,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/kuntao/proprietary/vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
     vendor/lenovo/kuntao/proprietary/vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
     vendor/lenovo/kuntao/proprietary/vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
-    vendor/lenovo/kuntao/proprietary/vendor/etc/audio_platform_info_extcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_extcodec.xml \
-    vendor/lenovo/kuntao/proprietary/vendor/etc/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
     vendor/lenovo/kuntao/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     vendor/lenovo/kuntao/proprietary/vendor/etc/camera/imx258_kuntaoof_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx258_kuntaoof_chromatix.xml \
     vendor/lenovo/kuntao/proprietary/vendor/etc/camera/imx258_kuntaosy_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx258_kuntaosy_chromatix.xml \
